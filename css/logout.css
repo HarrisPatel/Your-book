@@ -1,0 +1,47 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1f1f1f; /* Dark background */
+    color: #fff;
+}
+
+.logout-div {
+    width : 200px;
+    padding: 40px;
+    background-color: #2d2d2d; /* Dark container background */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    transition : 0.5s
+}
+.logout-div h4{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    transition : 0.5s;
+    font-size: 20px;
+    margin-top : 0px
+}
+
+.logout-div a {
+    text-decoration : none;
+    padding: 12px 20px;
+    background-color: #6932a8; /* Premium purple */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-div a:hover {
+    background-color: #5a2893; /* Darker purple on hover */
+}
+.logout-div .logout-option-div{
+    display : flex;
+    justify-content : center;
+    gap : 20px
+}

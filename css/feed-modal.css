@@ -1,0 +1,139 @@
+
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #3d3b3b;
+}
+
+.comment img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comment-body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    max-width: 80%;
+}
+
+.comment-user {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 3px;
+    color: white;
+}
+
+.comment-body p {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.comment-section {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #1f1f1f;
+    border-top: 1px solid #3d3b3b;
+}
+
+.comment-input {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #1a1a1a;
+    background-color: #1a1a1a;
+    position: absolute;
+    margin: -18px auto;
+    bottom: 30px;
+    width: 100%;
+    padding: 8px 10px;
+    box-sizing: border-box
+}
+
+.comment-input textarea {
+    width: 100%;
+    height: 50px;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    resize: none;
+    border-radius: 15px;
+    background-color: #1a1a1a;
+    outline: none;
+    color : white;
+}
+
+.comment-input button {
+    background-color: #6932a8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-bottom : 12px
+}
+
+
+
+#commentModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    position: relative;
+    height: 50%;
+    position: fixed;
+    width: 50%;
+    bottom: -15px;
+    color: white;
+    z-index: -11;
+    left : 25%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.close-btn:hover {
+    color: white;
+}
+
+
+@media (max-width: 950px) {
+    .modal-content {
+        left : 0%;
+        width: 100%;
+
+    }
+}
+@media (max-width: 768px) {
+
+    .modal-content {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f; 
+    color: #fff;
+}
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #2d2d2d; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color : white;
+    padding: 20px;
+}
+.follower {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.follower img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.follower-details {
+    display: flex;
+    align-items: center;
+}
+
+.follower-details .username {
+    font-weight: bold;
+    color: white;
+    margin-bottom : 3px
+}
+.follower-details .fullname {
+    color: #8e8e8e;
+    font-size: 14px;
+}
+
+.follow-profile-btn {
+    padding: 8px 16px;
+    background-color: #6932a8;
+    border: 1px solid #6932a8;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration : none;
+    color: white;
+    text-decoration : none;
+
+}
+
+.unfollow-profile-btn {
+    padding: 8px 16px;
+    border: 1px solid #6932a8;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration : none;
+    background: #6932a8;
+    color: white;
+    text-decoration : none;
+}
